@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Website</title>
+<style>main {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.product-detail {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.product-info {
+    max-width: 600px;
+}
+
+.product-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 24px;
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+
+.product-rating {
+    margin-bottom: 20px;
+}
+
+.product-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+    background-color: #ff9900;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product-details {
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details h3 {
+    margin-bottom: 15px;
+}
+
+.product-details ul {
+    list-style: none;
+}
+
+.product-details li {
+    margin-bottom: 10px;
+}
+
+.customer-reviews {
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-reviews h3 {
+    margin-bottom: 15px;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review p {
+    font-size: 16px;
+}
+aside {
+border: 2px solid #ccc;
+padding: 10px;
+margin: 20px;
+align:right;
+}
+img {
+width: 20%;
+height: auto;
+border: 1px solid #ddd;
+}
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+header {
+background-color: #333;
+color: white;
+padding: 20px;
+text-align: left;
+}
+nav {
+background-color: #333;
+overflow: hidden;
+position:sticky;
+top:0px;
+}
+nav a {
+color: white;
+padding: 14px 20px;
+text-align: center;
+display: inline-block;
+text-decoration: none;
+}
+nav a:hover {
+background-color: #ddd;
+color: black;
+}
+main {
+padding: 20px;
+}
+footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>amazon</h1>
+</header>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+<aside>
+<a href="https://example.com">
+<img src="download.jpg" alt="Example Image">
+</a>
+ </aside>
+<main>
+<section class="product-detail">
+<div class="product-image">
+<img src="shoe.jpg" alt="Product Image">
+</div>
+<div class="product-info">
+ <h2>NIKE SHOES</h2>
+ <p class="product-price">$20.99</p>
+ <p class="product-rating">
+ ⭐⭐⭐⭐☆ (2000 reviews)
+ </p>
+ <p class="product-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada eros nec nulla pharetra, 
+                    et tincidunt ante tincidunt. Integer vitae enim vel erat volutpat tincidunt.
+                </p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </section>
+        
+        <section class="product-details">
+            <h3>Product Specifications</h3>
+            <ul>
+                <li><strong>Brand:</strong> BrandName</li>
+                <li><strong>Model:</strong> XYZ-123</li>
+                <li><strong>Weight:</strong> 1.5kg</li>
+                <li><strong>Color:</strong> Black</li>
+                <li><strong>Size:</strong> Medium</li>
+            </ul>
+        </section>
+
+        <section class="customer-reviews">
+            <h3>Customer Reviews</h3>
+            <div class="review">
+                <p><strong>John Doe</strong> - ⭐⭐⭐⭐⭐</p>
+                <p>This product is amazing! Totally worth the price.</p>
+            </div>
+            <div class="review">
+                <p><strong>Jane Smith</strong> - ⭐⭐⭐⭐☆</p>
+                <p>Good quality, but the delivery took longer than expected.</p>
+            </div>
+        </section>
+</main>
+<section id="home">
+<h2>Home</h2>
+<p>This is the home section of the website.</p>
+</section>
+<section id="about-amazon" class="about-amazon">
+<header>
+<h2>About Amazon</h2>
+</header>
+<p>Amazon.com, Inc. is a multinational technology and e-commerce company based in Seattle, Washington. Founded by Jeff Bezos in 1994, Amazon started as an online bookstore and has grown into one of the largest online retailers in the world. The company operates across various sectors, including e-commerce, cloud computing, digital streaming, and artificial intelligence.</p>
+<p>Amazon is known for its diverse product offerings, ranging from electronics and books to groceries, clothing, and beyond. Its most popular products include the Amazon Echo, Kindle e-readers, and Fire TV. Additionally, the company has revolutionized logistics and supply chain management, with a vast network of fulfillment centers and advanced technologies.</p>
+<p>Today, Amazon continues to innovate and expand globally, with services like Amazon Web Services (AWS), Amazon Prime, and Amazon Fresh. Whether it's shopping, streaming movies, or powering the cloud, Amazon is a central part of daily life for millions of people worldwide.</p>
+</section>
+</main>
+<footer>
+    <p>&copy; 2025 My Website. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
